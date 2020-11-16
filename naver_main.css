@@ -1,0 +1,214 @@
+p,a,ul{
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	font-size:13px;
+}
+.main-container {
+  width: 1080px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 균일한 크기로 3등분 */
+  grid-template-rows: repeat(24, 40px); /* 40px로 24등분 -> <main> 영역의 전체 height가 계산된다면 height 지정 후 1fr로 사용하셔도 좋습니다.*/
+  gap: 10px;
+}
+.temp-box {
+  background: skyblue;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid #dee3eb;
+}
+.box-one {
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+	background-image: url(nnaver_%EA%B4%91%EA%B3%A0.jpg);
+	background-size: cover;
+}
+.box-two {
+  grid-column: 3 / 4;
+  grid-row: 1 / 4;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #f7f9fa;
+	border: 1px solid #dae1e6;
+}
+.box-two a{
+	font-size: 12px;
+	color: #404040;
+}
+.box-two p{
+	font-size: 12px;
+	text-align: left;
+	width: 100%;
+	padding-left: 20px;
+	color: grey;
+}
+.box-two .login{
+	position: relative;
+	background-color: #19ce60;
+	width: 90%;
+	height: 50px;
+}
+.box-two .login a{
+	color: white;
+
+	font-size: 15px
+}
+.box-two .login a b{
+	font-size: 20px;
+	font-weight: 900;
+}
+.box-two .sub_area{
+	line-height: 30px;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.box-two .sub_area a{
+	color: #404040;
+}
+.box-two .look_box{
+	text-align: left;
+	margin-left: 20px;
+	flex: 3;
+}
+.box-two .link_join{
+	flex: 2;
+}
+.box-two ul>li{
+	display: inline-block;
+	padding-top: 9px;
+}
+.box-three-1 {
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+	display: flex;
+	align-items:center;
+	box-sizing: border-box;
+	background-color:  #f7f9fa;
+	border: 1px solid #dae1e6;
+}
+.box-three-1 .link_media{
+	flex: 1;
+	text-align: left;
+	margin-left: 8px;
+}
+.box-three-1 .issue{
+	flex: 4;
+	text-align: left;
+	margin-left: 8px;
+}
+.box-three-1 ul>li{
+	display: inline-block;
+	margin-right: 8px;
+	font-weight: bold;
+}
+.box-three-2 {
+  grid-column: 1 / 3;
+  grid-row: 5 / 11;
+
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr); /* 균일한 크기로 3등분 */
+	grid-template-rows: repeat(4, 1fr); /* 40px로 24등분 -> <main> 영역의 전체 height가 계산된다면 height 지정 후 1fr로 사용하셔도 좋습니다.*/
+
+	
+}
+.news_box{
+	background: white;
+	display: flex;
+  align-items:center;
+	justify-content: center;
+  font-size: 30px;
+  border: 1px solid #dae1e6;
+}
+
+.box-four-1 {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color:  #f7f9fa;
+	border: 1px solid #dae1e6;
+}
+.box-four-2 {
+  grid-column: 3 / 4;
+  grid-row: 5 / 9;
+	background-image: url(naver_%EA%B4%91%EA%B3%A02.jpg);
+	background-size: cover;
+}
+.box-five {
+  grid-column: 1 / 3;
+  grid-row: 11 / 24;
+}
+.box-six {
+  grid-column: 3 / 4;
+  grid-row: 9 / 24;
+	display: ;
+}
+.box-six .shop_header{
+	display: flex;
+	padding: 12px;
+	justify-content: space-between;
+	background-color: white;
+	border: none;
+}
+.box-six .trend_shopping{
+	flex: 3;
+	text-align: left;
+}
+.box-six ul>li{
+	flex: 1;
+	display: inline-block;
+	padding-right: 8px;
+}
+.box-six .shop_nav{
+	background-color: #f7f9fa;
+  border-bottom: 1px solid #dae1e6;
+}
+.box-six .mall_area{
+	display: flex;
+	align-items: center;
+	justify-content:space-around;
+	padding: 5px 10px 5px 10px;
+}
+.box-six .link_mall{
+	font-size: 12px;
+}
+.box-six .shop_page_switch{
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px;
+	background-color: white;
+}
+
+.box-six .shop_main{
+	display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 균일한 크기로 3등분 */
+  grid-template-rows: repeat(4, 150px);
+}
+.box-six .shop_page{
+  background: skyblue;
+  text-align: center;
+  border: 1px solid #dee3eb;
+}
+.shop_page_1{
+	background-image: url(shop_1.gif);
+	background-size: cover;	
+}
+
+
+
+
+
+
+.box-seven {
+  grid-column: 1 / 3;
+  grid-row: 24 / 26;
+}
+.box-eight {
+  grid-column: 3 / 4;
+  grid-row: 24 / 26;
+}
