@@ -1,4 +1,4 @@
-p,a,ul{
+p,a,ul,li{
 	text-decoration: none;
 	margin: 0;
 	padding: 0;
@@ -9,7 +9,7 @@ p,a,ul{
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 균일한 크기로 3등분 */
-  grid-template-rows: repeat(24, 40px); /* 40px로 24등분 -> <main> 영역의 전체 height가 계산된다면 height 지정 후 1fr로 사용하셔도 좋습니다.*/
+  grid-template-rows: repeat(15, 40px); /* 40px로 24등분 -> <main> 영역의 전체 height가 계산된다면 height 지정 후 1fr로 사용하셔도 좋습니다.*/
   gap: 10px;
 }
 .temp-box {
@@ -34,10 +34,12 @@ p,a,ul{
 	border: 1px solid #dae1e6;
 }
 .box-two a{
+	margin: 20px;
 	font-size: 12px;
 	color: #404040;
 }
 .box-two p{
+	margin-top: 20px;
 	font-size: 12px;
 	text-align: left;
 	width: 100%;
@@ -45,6 +47,7 @@ p,a,ul{
 	color: grey;
 }
 .box-two .login{
+	margin-top: 10px;
 	position: relative;
 	background-color: #19ce60;
 	width: 90%;
@@ -77,6 +80,7 @@ p,a,ul{
 	flex: 2;
 }
 .box-two ul>li{
+	text-align: left;
 	display: inline-block;
 	padding-top: 9px;
 }
@@ -112,8 +116,6 @@ p,a,ul{
 	display: grid;
 	grid-template-columns: repeat(6, 1fr); /* 균일한 크기로 3등분 */
 	grid-template-rows: repeat(4, 1fr); /* 40px로 24등분 -> <main> 영역의 전체 height가 계산된다면 height 지정 후 1fr로 사용하셔도 좋습니다.*/
-
-	
 }
 .news_box{
 	background: white;
@@ -139,13 +141,9 @@ p,a,ul{
 	background-image: url(naver_%EA%B4%91%EA%B3%A02.jpg);
 	background-size: cover;
 }
-.box-five {
-  grid-column: 1 / 3;
-  grid-row: 11 / 24;
-}
 .box-six {
   grid-column: 3 / 4;
-  grid-row: 9 / 24;
+  grid-row: 9 / 11;
 	display: ;
 }
 .box-six .shop_header{
@@ -194,21 +192,40 @@ p,a,ul{
   text-align: center;
   border: 1px solid #dee3eb;
 }
-.shop_page_1{
-	background-image: url(shop_1.gif);
-	background-size: cover;	
+.box-five {
+  grid-column: 1 / 4;
+  grid-row: 12 / 15;
+	display: flex;
+	background-color: white;
+	border-left: none;
+	border-right: none;
 }
-
-
-
-
-
-
-.box-seven {
-  grid-column: 1 / 3;
-  grid-row: 24 / 26;
+.box-five .banner_area{
+	flex: 1;
+	display: flex;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: auto;
 }
-.box-eight {
-  grid-column: 3 / 4;
-  grid-row: 24 / 26;
+.box-five img{
+	flex: 1;
+	width: 160px;
+	height: 86px;
+}
+.box-five p{
+	float: left;
+	padding-left: 9px; 
+}
+.box-five .green{
+	color: #19ce60;
+	font-weight: bold;
+}
+.box-five .main_b p{
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.box-five .main_p p{
+	font-size: 7px;
+	float: left;
 }
